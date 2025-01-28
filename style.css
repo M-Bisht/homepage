@@ -17,7 +17,6 @@ body {
   min-height: 50rem;
   display: grid;
   place-items: center;
-  overflow: hidden;
 }
 
 h1 {
@@ -28,17 +27,17 @@ h1 {
   font-size: 6vw;
   text-align: center;
   line-height: 15vw;
-  animation: swipeUp 300ms ease;
+  animation: swipeUp 500ms ease;
 }
 
 @keyframes swipeUp {
   0% {
+    transform: translateY(+50px);
     opacity: 0;
-    transform: scale(2);
   }
   100% {
+    transform: translateY(0px);
     opacity: 100;
-    transform: scale(1);
   }
 }
 
